@@ -1,0 +1,519 @@
+{
+  "questions": [
+    {
+      "question": "Which is the most popular JavaScript framework?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which company invented React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "What's the fundamental building block of React apps?",
+      "options": ["Components", "Blocks", "Elements", "Effects"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What's the name of the syntax we use to describe the UI in React components?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "How does data flow naturally in React apps?",
+      "options": [
+        "From parents to children",
+        "From children to parents",
+        "Both ways",
+        "The developers decides"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "How to pass data into a child component?",
+      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "When to use derived state?",
+      "options": [
+        "Whenever the state should not trigger a re-render",
+        "Whenever the state can be synchronized with an effect",
+        "Whenever the state should be accessible to all components",
+        "Whenever the state can be computed from another state variable"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "What triggers a UI re-render in React?",
+      "options": [
+        "Running an effect",
+        "Passing props",
+        "Updating state",
+        "Adding event listeners to DOM elements"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "When do we directly \"touch\" the DOM in React?",
+      "options": [
+        "When we need to listen to an event",
+        "When we need to change the UI",
+        "When we need to add styles",
+        "Almost never"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "In what situation do we use a callback to update state?",
+      "options": [
+        "When updating the state will be slow",
+        "When the updated state is very data-intensive",
+        "When the state update should happen faster",
+        "When the new state depends on the previous state"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "If we pass a function to useState, when will that function be called?",
+      "options": [
+        "On each re-render",
+        "Each time we update the state",
+        "Only on the initial render",
+        "The first time we update the state"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which hook to use for an API request on the component's initial render?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which variables should go into the useEffect dependency array?",
+      "options": [
+        "Usually none",
+        "All our state variables",
+        "All state and props referenced in the effect",
+        "All variables needed for clean up"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "An effect will always run on the initial render.",
+      "options": [
+        "True",
+        "It depends on the dependency array",
+        "False",
+        "In depends on the code in the effect"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "When will an effect run if it doesn't have a dependency array?",
+      "options": [
+        "Only when the component mounts",
+        "Only when the component unmounts",
+        "The first time the component re-renders",
+        "Each time the component is re-rendered"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of using keys in lists in React?",
+      "options": [
+        "To uniquely identify each element in an array",
+        "To manage the rendering order of components",
+        "To optimize the re-rendering process",
+        "To create a hierarchical structure within lists"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What does prop drilling refer to in React?",
+      "options": [
+        "Passing props from child to parent components",
+        "Passing props from parent to child components",
+        "Exposing props globally across the application",
+        "Copying props between sibling components"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using the Context API in React?",
+      "options": [
+        "Simplifies the state management process",
+        "Enables global state management without prop drilling",
+        "Improves performance by optimizing renders",
+        "Allows for direct manipulation of the DOM"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the virtual DOM in React?",
+      "options": [
+        "To speed up the initial rendering process",
+        "To manage state changes within the application",
+        "To directly interact with the browser's DOM",
+        "To improve performance by updating the actual DOM efficiently"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "Which method is used to fetch data from an API in React?",
+      "options": ["fetchData()", "retrieveData()", "fetch()", "getData()"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What's the purpose of using CSS-in-JS libraries in React?",
+      "options": [
+        "To optimize the CSS rendering process",
+        "To encapsulate CSS styles within components",
+        "To integrate external CSS files into the application",
+        "To provide a global CSS style management system"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using Redux in a React application?",
+      "options": [
+        "Reduces the need for component state management",
+        "Optimizes the rendering process for complex components",
+        "Simplifies the process of data fetching from APIs",
+        "Provides a global state management solution for the application"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of React Router in a React application?",
+      "options": [
+        "To manage the application's internal state",
+        "To enable server-side rendering for the application",
+        "To handle routing and navigation between components",
+        "To provide additional security measures for the application"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the significance of the componentDidMount lifecycle method in React?",
+      "options": [
+        "It's called after the component has mounted",
+        "It's triggered before the component unmounts",
+        "It's executed during the initial rendering process",
+        "It's used for handling state updates within the component"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the shouldComponentUpdate method in React?",
+      "options": [
+        "To update the component's internal state",
+        "To validate the necessity of re-rendering the component",
+        "To handle errors and exceptions within the component",
+        "To manage the component's lifecycle events"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the componentWillUnmount method in React?",
+      "options": [
+        "To render components into the DOM",
+        "To update the component's internal state",
+        "To handle component state changes",
+        "To perform cleanup before the component is removed from the DOM"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the role of the componentDidUpdate method in React?",
+      "options": [
+        "To update the component's internal state",
+        "To render the component into the DOM",
+        "To handle the component's lifecycle events",
+        "To perform actions after the component updates"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the React.Fragment component?",
+      "options": [
+        "To create reusable components",
+        "To handle asynchronous operations in React",
+        "To define the structure of a React component",
+        "To group a list of children without adding extra nodes to the DOM"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using arrow functions in React?",
+      "options": [
+        "They offer better performance in event handling",
+        "They automatically bind the context of 'this'",
+        "They enable faster component rendering",
+        "They improve the overall readability of the code"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the useReducer hook in React?",
+      "options": [
+        "To manage and update component state",
+        "To handle complex asynchronous operations",
+        "To define the structure of a functional component",
+        "To ensure secure routing within the application"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using memoization in React?",
+      "options": [
+        "It reduces the size of the rendered components",
+        "It improves the readability of the code",
+        "It optimizes the performance of expensive functions",
+        "It enhances the debugging process of the application"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of error boundaries in React?",
+      "options": [
+        "To handle server-side errors in the application",
+        "To catch JavaScript errors during rendering",
+        "To prevent memory leaks within components",
+        "To manage the data flow between parent and child components"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using forward refs in React?",
+      "options": [
+        "It simplifies the sharing of data between components",
+        "It enables components to directly access the DOM",
+        "It optimizes the rendering process for child components",
+        "It enhances the error-handling capabilities of components"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the useLayoutEffect hook in React?",
+      "options": [
+        "To handle DOM operations before painting",
+        "To optimize the rendering process for complex components",
+        "To manage state changes within the application",
+        "To simplify the error-handling process of components"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using CSS modules in React?",
+      "options": [
+        "They ensure the security of the application",
+        "They optimize the performance of CSS rendering",
+        "They encapsulate CSS styles within individual components",
+        "They provide a global CSS style management system"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the useImperativeHandle hook in React?",
+      "options": [
+        "To manage the imperative operations of components",
+        "To optimize the performance of functional components",
+        "To define the structure of the component's state",
+        "To expose specific functions to parent components"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using lazy loading in React?",
+      "options": [
+        "It optimizes the initial rendering process of the application",
+        "It simplifies the error-handling process of components",
+        "It enhances the performance of complex UI components",
+        "It improves the application's load time and performance"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the useDebugValue hook in React?",
+      "options": [
+        "To optimize the rendering process of components",
+        "To enable the debugging of complex state changes",
+        "To manage the state updates within the application",
+        "To display custom labels for custom hooks in React DevTools"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using React.PureComponent?",
+      "options": [
+        "It simplifies the error-handling process of components",
+        "It enhances the performance of class components",
+        "It optimizes the rendering process for complex components",
+        "It reduces the need for prop drilling between components"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the React.StrictMode component?",
+      "options": [
+        "To manage state changes within components",
+        "To enable strict mode for class components",
+        "To optimize the performance of the application",
+        "To catch potential issues and warn about unsafe practices"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using suspense in React?",
+      "options": [
+        "It simplifies the management of complex state changes",
+        "It optimizes the rendering process of child components",
+        "It enhances the performance of the application",
+        "It improves the handling of asynchronous operations"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the React Router's BrowserRouter component?",
+      "options": [
+        "To manage the application's internal state",
+        "To handle routing and navigation between components",
+        "To optimize the rendering process for complex components",
+        "To improve the performance of the application"
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using React.memo for functional components?",
+      "options": [
+        "It optimizes the rendering process for complex components",
+        "It enhances the performance of state management",
+        "It simplifies the error-handling process of components",
+        "It improves the debugging capabilities of the application"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the React.lazy function?",
+      "options": [
+        "To enable lazy loading for individual components",
+        "To handle asynchronous operations within the application",
+        "To optimize the performance of the application",
+        "To enhance the error-handling capabilities of components"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using the useRouteMatch hook in React Router?",
+      "options": [
+        "It enables dynamic routing for individual components",
+        "It simplifies the error-handling process of components",
+        "It optimizes the rendering process for child components",
+        "It provides access to the current URL parameters and query strings"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the withRouter higher-order component in React Router?",
+      "options": [
+        "To manage state changes within components",
+        "To optimize the rendering process for complex components",
+        "To handle routing and navigation between components",
+        "To pass the updated match, location, and history props to the wrapped component"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using the useHistory hook in React Router?",
+      "options": [
+        "It simplifies the rendering process for complex components",
+        "It optimizes the application's internal state management",
+        "It enhances the debugging capabilities of the application",
+        "It provides access to the browser's history object"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the purpose of the useParams hook in React Router?",
+      "options": [
+        "To enable dynamic routing for individual components",
+        "To optimize the performance of the application",
+        "To enhance the error-handling capabilities of components",
+        "To provide access to the current URL parameters"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What's the benefit of using the useLocation hook in React Router?",
+      "options": [
+        "It simplifies the handling of component state changes",
+        "It optimizes the rendering process for complex components",
+        "It enhances the debugging capabilities of the application",
+        "It provides access to the current location object"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "What is the purpose of the useLink hook in React Router?",
+      "options": [
+        "To manage the state changes within components",
+        "To optimize the rendering process for complex components",
+        "To handle routing and navigation between components",
+        "To provide access to the browser's navigation history"
+      ],
+      "correctOption": 2,
+      "points": 20
+    }
+  ]
+}

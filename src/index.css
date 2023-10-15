@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Codystar&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Some resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "roboto";
+  color: #f1f5f9;
+}
+
+.app {
+  background-color: #374151;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 4rem;
+}
+.header {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header img {
+  width: 15rem;
+  animation: rotate 25s linear infinite normal;
+}
+.header h1 {
+  font-family: "codystar";
+  font-weight: 900;
+  font-size: 6rem;
+}
+
+.main {
+  width: 50rem;
+  margin-bottom: 5rem;
+}
+
+/* FOR THE LOADING COMPONENT */
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 2rem;
+  font-size: 2rem;
+}
+.sun {
+  height: 12px;
+  width: 12px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.system-container {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: loading 3s linear infinite;
+}
+.earth-container {
+  height: 35%;
+  width: 35%;
+  position: relative;
+  animation: loading 1.2s linear infinite;
+}
+.earth {
+  height: 5px;
+  width: 5px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.moon {
+  height: 2px;
+  width: 2px;
+  background-color: #f1f5f9;
+  border-radius: 50%;
+  position: relative;
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* FOR ERROR */
+.error {
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #4b5563;
+  border-radius: 10rem;
+  padding-block: 2rem;
+}
+
+.start {
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+button {
+  color: inherit;
+  border: 2px solid #4b5563;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  background-color: #4b5563;
+}
+button:not(.question button):hover {
+  background-color: #374151;
+}
+
+/* FOR PROGRESS BAR */
+.progress {
+  color: #d1d5db;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+progress {
+  width: 100%;
+  height: 1.2rem;
+  margin: 1rem 0;
+  -webkit-appearance: none;
+}
+progress::-webkit-progress-bar {
+  background-color: #d1d5db;
+  border-radius: 100px;
+}
+progress::-webkit-progress-value {
+  background-color: #0284c7;
+  border-radius: 100px;
+}
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOR QUESTION COMPONENT */
+.question {
+  font-size: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.question button {
+  text-align: start;
+  transition: all 0.2s linear;
+}
+.question button:not([disabled]):hover {
+  transform: translateX(30px) scale(102.5%);
+  background-color: #374151;
+}
+.correct {
+  color: inherit;
+  background-color: #0284c7;
+  border: 2px solid #0284c7;
+}
+.wrong {
+  color: #374151;
+  background-color: #fb923c;
+  border: 2px solid #fb923c;
+}
+.selected {
+  transform: translateX(30px);
+}
+
+/* FOR FOOTER COMPONENT */
+.footer {
+  font-size: 1.5rem;
+  padding: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.timer {
+  color: inherit;
+  border: 2px solid #4b5563;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  background-color: #374151;
+}
+
+/* FINISH SCREEN */
+.finish {
+  font-size: 2rem;
+  text-align: center;
+}
+.result {
+  width: 100%;
+  background-color: #0284c7;
+  padding: 2rem;
+  border-radius: 10rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.highscore {
+  margin-bottom: 6rem;
+}
+.finish button {
+  float: right;
+}
