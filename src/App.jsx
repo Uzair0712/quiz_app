@@ -121,7 +121,6 @@ function App() {
         {status === "ready" && (
           <Start dispatch={dispatch} numQuestions={questions.length} />
         )}
-
         {status === "active" && (
           <>
             <Progress
